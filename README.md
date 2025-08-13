@@ -7,7 +7,7 @@
 | الحلقة | الهيكل       | الرابط                    |
 |--------|--------------|---------------------------|
 | 🪄     | Introduction   | [introduction.md](Introduction.md) |
-| 1️⃣     | ArrayList    | [arraylist.md](arraylist.md) |
+| 1️⃣     | ArrayList    | [arraylist.md](Arraylist) |
 | 2️⃣     | Linked List  | [linkedlist.md](linkedlist.md) |
 | 3️⃣     | Stack        | [stack.md](stack.md) |
 | 4️⃣     | Queue        | [queue.md](queue.md) |
