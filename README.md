@@ -9,7 +9,7 @@
 | 🪄     | Introduction   | [introduction.md](Introduction.md) |
 | 1️⃣     | ArrayList    | [arraylist.md](Arraylist) |
 | 2️⃣     | Linked List  | [linkedlist.md](linkedlist) |
-| 3️⃣     | Stack        | [stack.md](stack.md) |
+| 3️⃣     | Stack        | [stack.md](stack) |
 | 4️⃣     | Queue        | [queue.md](queue.md) |
 | 5️⃣     | Hash Table   | [hashtable.md](hashtable.md) |
 | 6️⃣     | Tree         | [tree.md](tree.md) |
