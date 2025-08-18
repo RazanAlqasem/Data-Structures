@@ -4,6 +4,8 @@
 أمثل الـ Data ع شكل node وكل node بنبثق منها مجموعة من الـ nodes  
 A tree is a hierarchical, non-linear data structure.
 
+![tree](FF.png)
+
 ---
 ##🍃 ليش اسمها TREE ؟ 
 لانه شكلها فعليا متل الشجرة 
@@ -12,7 +14,6 @@ Root / Branches / Leaves
 ---
 
 ## 🍃 مصطلحات اساسية لازم تكون بتعرفها 
-![tree](image-removebg-preview (18).png)
 
 ### ⭐ Root (الجذر)
 
@@ -62,7 +63,7 @@ node إلها نفس parent.
 
 ## 🍃 Types of trees
 
-![tree](types of tree.png)
+![tree](TypesOfTree.png)
 
 ### ⭐ General Tree 
 
