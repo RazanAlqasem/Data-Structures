@@ -83,7 +83,7 @@ node إلها نفس parent.
 <img src="bbb.png" width="200" height="300">
 
 
-#### Full Binary Tree
+#### 🔹Full Binary Tree
 كل عقدة (Node) فيها يا إمّا 0 أبناء أو 2 أبناء.
 
 يعني ما في عقدة عندها ابن واحد فقط
@@ -91,14 +91,14 @@ node إلها نفس parent.
 <img src="full-binary-tree_0.webp" width="200" height="300">
 
 
-####  Perfect Binary Tree
+#### 🔹Perfect Binary Tree
 كل المستويات مليانة 100%.
 
 جميع الأوراق (Leaves) موجودة بنفس المستوى.
 <img src="perfect-binary-tree_0.webp" width="200" height="300">
 
 
-#### Complete Binary Tree
+#### 🔹Complete Binary Tree
 كل المستويات مليانة بالعقد.
 
 المستوى الأخير ممكن يكون ناقص، لكن لازم يتعبّى من اليسار لليمين.
@@ -106,21 +106,21 @@ node إلها نفس parent.
 <img src="complete-binary-tree_0.webp" width="200" height="300">
 
 
-#### skewe Binary Tree
+#### 🔹skewe Binary Tree
 
 كل عقدة فيها ابن واحد فقط (يا إما كلهن left child أو كلهن right child).
 
 <img src="skewed-binary-tree_0.webp" width="200" height="300">
 
 
-#### Degenerate Binary Tree
+#### 🔹Degenerate Binary Tree
 
 كل عقدة فيها ابن واحد فقط (يا  left child أو  right child).
 
 <img src="degenerate-binary-tree_0.webp" width="200" height="300">
 
 
-####  Binary Search Tree (BST)
+#### 🔹Binary Search Tree (BST)
 
 القيم الأصغر من قيمة العقدة → موجودة بالـ Left Subtree.
 
@@ -133,30 +133,138 @@ node إلها نفس parent.
 
 <img src="degenerate-binary-tree_0.webp" width="200" height="300">
 
-## implementation of BST 
-### Traversal :
+## 🍃 implementation of BST 
 
-#### Pre order
+### ✳ Traversal :
 
-#### in order
-
-#### post order
-
-### pre order :
+### 🔸pre order :
 
  #### Root -> left -> Right
 
 
-### in order:
+<pre>
+ class Node {
+    int data;
+    Node left, right;
+
+    Node(int value) {
+        data = value;
+        left = right = null;
+    }
+}
+
+class BinaryTree {
+    Node root;
+    void preorder(Node node) {
+        if (node == null) {
+            return;
+        }
+        System.out.print(node.data + " "); 
+        preorder(node.left);            
+        preorder(node.right);             
+    }
+
+    public static void main(String[] args) {
+        BinaryTree tree = new BinaryTree();
+        tree.root = new Node(1);
+        tree.root.left = new Node(2);
+        tree.root.right = new Node(3);
+        tree.root.left.left = new Node(4);
+        tree.root.left.right = new Node(5);
+        System.out.println("Preorder traversal of tree:");
+        tree.preorder(tree.root);
+    }
+}
+
+</pre>
+
+
+### 🔸in order:
 
 #### left -> Root -> Right
 
 
-### Post order :
+<pre>
+
+ class Node {
+    int data;
+    Node left, right;
+    Node(int value) {
+        data = value;
+        left = right = null;
+    }
+}
+class BinaryTree {
+    Node root;
+    void inorder(Node node) {
+        if (node == null) {
+            return; }
+        inorder(node.left);
+        System.out.print(node.data + " ");  
+        inorder(node.right);     
+    }
+    public static void main(String[] args) {
+        BinaryTree tree = new BinaryTree();
+        tree.root = new Node(1);
+        tree.root.left = new Node(2);
+        tree.root.right = new Node(3);
+        tree.root.left.left = new Node(4);
+        tree.root.left.right = new Node(5);
+
+        System.out.print("Inorder Traversal: ");
+        tree.inorder(tree.root);
+    }
+}
+
+</pre>
+
+
+### 🔸Post order :
 
 #### leaf -> Right -> Root 
- 
 
+<pre>
+class Node {
+    int data;
+    Node left, right;
+
+    Node(int value) {
+        data = value;
+        left = right = null;
+    }
+}
+class BinaryTree {
+    Node root;
+
+    void postOrder(Node node) {
+        if (node == null) {
+            return;
+        }
+        postOrder(node.left);
+        postOrder(node.right);
+        System.out.print(node.data + " ");
+    }
+
+    void postOrderTraversal() {
+        postOrder(root);
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        BinaryTree tree = new BinaryTree();
+        tree.root = new Node(1);
+        tree.root.left = new Node(2);
+        tree.root.right = new Node(3);
+        tree.root.left.left = new Node(4);
+        tree.root.left.right = new Node(5);
+
+        System.out.println("Postorder traversal:");
+        tree.postOrderTraversal();
+    }
+}
+
+</pre>
+![TreeTraversal](TreeTraversal.jpg)
 
 
 
