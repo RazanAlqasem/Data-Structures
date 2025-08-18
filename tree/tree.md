@@ -39,13 +39,16 @@ Root / Branches / Leaves
 
 node متصلة مباشرةً parent .
 
+
 ### ⭐ Leaf (ورقة)
 
 node ما إلها children 
 
+
 ### ⭐ Siblings (إخوة)
 
 node إلها نفس parent.
+
 
 ### ⭐ Height (الارتفاع)
 
@@ -63,27 +66,67 @@ node إلها نفس parent.
 
 ## 🍃 Types of trees
 
-![tree](TypesOfTree.png)
 
 ### ⭐ General Tree 
 
-أي عقدة ممكن يكون إلها عدد غير محدود من الأبناء.
+أي عقدة ممكن يكون إلها عدد غير محدود من الأبناء.]
+
+<img src="General-Tree.jpg" width="200" height="300">
+
 
 ### ⭐ Binary Tree 
 
 كل عقدة مسموح إلها حد أقصى ولدين (Left + Right).
 
 أكثر نوع مشهور بالداتا ستركتشور.
+<img src="binary_tree_1.webp" width="200" height="300">
+
+
+#### Full Binary Tree
+كل عقدة (Node) فيها يا إمّا 0 أبناء أو 2 أبناء.
+
+يعني ما في عقدة عندها ابن واحد فقط.
+<img src="full-binary-tree_0.webp" width="200" height="300">
+
+
+####  Perfect Binary Tree
+كل المستويات مليانة 100%.
+
+جميع الأوراق (Leaves) موجودة بنفس المستوى.
+<img src="perfect-binary-tree_0.webp" width="200" height="300">
+
+
+#### Complete Binary Tree
+كل المستويات مليانة بالعقد.
+
+المستوى الأخير ممكن يكون ناقص، لكن لازم يتعبّى من اليسار لليمين.
+
+<img src="complete-binary-tree_0.webp" width="200" height="300">
+
+
+#### skewe Binary Tree
+
+كل عقدة فيها ابن واحد فقط (يا إما كلهن left child أو كلهن right child).
+
+<img src="skewed-binary-tree_0.webp" width="200" height="300">
+
+
+#### Degenerate Binary Tree
+
+كل عقدة فيها ابن واحد فقط (يا  left child أو  right child).
+
+<img src="degenerate-binary-tree_0.webp" width="200" height="300">
+
 
 ### ⭐ Binary Search Tree (BST)
-
-نفس الـ Binary Tree بس بترتيب خاص:
 
 القيم الأصغر من الأب → تروح يسار.
 
 القيم الأكبر من الأب → تروح يمين.
 
 بيخلي البحث أسرع.
+
+<img src="degenerate-binary-tree_0.webp" width="200" height="300">
 
 ### ⭐ Balanced Trees (متل  AVL, Red-Black Tree)
 
@@ -94,3 +137,5 @@ node إلها نفس parent.
 ### ⭐ Heap Tree
 
 نوع خاص من Binary Tree يستخدم بعمليات الـ Priority Queue.
+
+
