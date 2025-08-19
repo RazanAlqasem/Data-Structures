@@ -12,7 +12,7 @@
 | 3️⃣     | Stack        | [stack.md](stack) |
 | 4️⃣     | Queue        | [queue.md](queue) |
 | 5️⃣     | Hash Table   | [hashtable.md](hashtable.md) |
-| 6️⃣     | Tree         | [tree.md](tree.md) |
+| 6️⃣     | Tree         | [tree.md](tree) |
 | 7️⃣     | Graph        | [graph.md](graph.md) |
 
 
