@@ -382,6 +382,12 @@ public class Main {
 
 ### ✳ Search :
 
+# عرض الفيديو
+[شاهد الفيديو](search.mp4)
+
+<video width="600" controls>
+  <source src="search.mp4" type="video/mp4">
+</video>
 
 
 
