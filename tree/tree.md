@@ -4,7 +4,7 @@
 أمثل الـ Data ع شكل node وكل node بنبثق منها مجموعة من الـ nodes  
 A tree is a hierarchical, non-linear data structure.
 
-![tree](FF.png)
+![tree](image/FF.png)
 
 ---
 ## 🍃 ليش اسمها TREE ؟ 
@@ -74,7 +74,7 @@ Root / Branches / Leaves
 
 أي node ممكن يكون إلها عدد غير محدود من children.
 
-<img src="General-Tree.jpg" width="200" height="300">
+<img src="image/General-Tree.jpg" width="200" height="300">
 
 
 ### ⭐ Binary Tree 
@@ -83,7 +83,7 @@ Root / Branches / Leaves
 
 أكثر نوع مشهور بالداتا ستركتشور.
 
-<img src="bbb.png" width="200" height="300">
+<img src="image/bbb.png" width="200" height="300">
 
 
 #### 🔹Full Binary Tree
@@ -91,7 +91,7 @@ Root / Branches / Leaves
 
 يعني ما في node عندها child واحد فقط
 
-<img src="full-binary-tree_0.webp" width="200" height="300">
+<img src="image/full-binary-tree_0.webp" width="200" height="300">
 
 
 #### 🔹Perfect Binary Tree
@@ -99,7 +99,7 @@ Root / Branches / Leaves
 
 جميع الأوراق (Leaves) موجودة بنفس ال levels.
 
-<img src="perfect-binary-tree_0.webp" width="200" height="300">
+<img src="image/perfect-binary-tree_0.webp" width="200" height="300">
 
 
 #### 🔹Complete Binary Tree
@@ -107,21 +107,21 @@ Root / Branches / Leaves
 
 ال level الأخير ممكن يكون ناقص، لكن لازم يتعبّى من اليسار لليمين.
 
-<img src="complete-binary-tree_0.webp" width="200" height="300">
+<img src="image/complete-binary-tree_0.webp" width="200" height="300">
 
 
 #### 🔹skewe Binary Tree
 
 كل node فيها child واحد فقط (يا إما كلهن left child أو كلهن right child).
 
-<img src="skewed-binary-tree_0.webp" width="200" height="300">
+<img src="image/skewed-binary-tree_0.webp" width="200" height="300">
 
 
 #### 🔹Degenerate Binary Tree
 
 كل node فيها child واحد فقط (يا  left child أو  right child).
 
-<img src="degenerate-binary-tree_0.webp" width="200" height="300">
+<img src="image/degenerate-binary-tree_0.webp" width="200" height="300">
 
 
 #### 🔹Binary Search Tree (BST)
@@ -135,7 +135,7 @@ Root / Branches / Leaves
 يعني لو بدي ابحث عن رقم 12 بشوف root و بفحصه اذا اكبر منه بروح ع اليمين وبنسى اليسار وهيكك قللت وقت و اوجدت العنصر بسرعة 
 
 
-<img src="degenerate-binary-tree_0.webp" width="200" height="300">
+<img src="image/degenerate-binary-tree_0.webp" width="200" height="300">
 
 ## 🍃 implementation of BST :
 
@@ -296,7 +296,7 @@ public class Main {
 </pre>
 
 
-![TreeTraversal](TreeTraversal.jpg)
+![TreeTraversal](image/TreeTraversal.jpg)
 
 
 ---
@@ -304,7 +304,7 @@ public class Main {
 
 ### 🗯 insert :
 
-[شاهد الفيديو](insert.mp4)
+[شاهد الفيديو](image/insert.mp4)
 
  يعني كيف نضيف قيمة جديدة بالـ Binary Search Tree ونخليها محافظة على القاعدة الأساسية:
 
@@ -389,7 +389,8 @@ public class Main {
 
 ### 🗯 Search :
 
-[شاهد الفيديو](search.mp4)
+
+[شاهد الفيديو](image/search.mp4)
 
 بنبدا من root  اذا القيمة الي بدنا اياها نفسها ال root فتمام 
 اذا لاء بنشوف القيمة الي بعدها اذا اكبر منها بنروح يمين والا يسار لحد ما نوصل للقيمة الي بدنا اياها 
@@ -399,7 +400,8 @@ public class Main {
 
 ### 🗯 Delete :
 
-[شاهد الفيديو](delete.mp4)
+
+[شاهد الفيديو](image/delete.mp4)
 
 
 يعتمد الحذف على **ع عدد children ل node ** اللي بدنا نحذفها:
