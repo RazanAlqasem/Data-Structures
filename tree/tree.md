@@ -137,6 +137,8 @@ node إلها نفس parent.
 
 ### ✳ Traversal :
 
+كيف أمر ع كل node في ال tree
+
 ### 🔸pre order :
 
  #### Root -> left -> Right
@@ -175,8 +177,34 @@ class BinaryTree {
         tree.preorder(tree.root);
     }
 }
-
+ 
 </pre>
+
+شرح الكود :
+الكود عبارة عن (Binary Tree)**، وبداخلها ** (Node)** كل وحدة فيها:
+
+- **قيمة (data)**
+- **فرع يسار (left)**
+- **فرع يمين (right)**
+
+---
+
+### إدخال عنصر جديد - Insert
+  - إذا tree **فاضية (empty)**  العنصر بصير **(root)**
+  - إذا tree مش فاضية -> نقارن مع root :
+  - إذا القيمة أصغر -> نروح على **(left subtree)**
+  - إذا القيمة أكبر -> نروح على **(right subtree)**
+
+نكمل العملية لحد ما نلاقي مكان فاضي ونضيف node الجديدة.
+
+ال **preOrderTraversal** بتزور العقد بالترتيب:
+
+1.  (**Root**)  
+2. (**Left Subtree**)  
+3. (**Right Subtree**)
+
+   
+-----
 
 
 ### 🔸in order:
@@ -267,10 +295,92 @@ public class Main {
 ![TreeTraversal](TreeTraversal.jpg)
 
 
+---
 
 
+### ✳ insert :
+ يعني كيف نضيف قيمة جديدة بالـ Binary Search Tree ونخليها محافظة على القاعدة الأساسية:
 
+القيم الأصغر من node تروح على اليسار.
 
+القيم الأكبر من node تروح على اليمين.
+
+#### 📌 خطوات الإدخال (Insert):
+
+- اذا الشجرة فاضية -> العنصر الجديد بصير (root).
+
+- اذا القيمة أصغر من قيمة الجذر -> بروح للجهة اليسار.
+
+- اذا القيمة أكبر من قيمة الجذر -> بروح للجهة اليمين.
+
+بنكرر الخطوات لحد ما نوصل لمكان فاضي (null) ونحط ال node الجديدة.
+
+<pre>
+ class Node {
+    int data;
+    Node left, right;
+
+    Node(int value) {
+        data = value;
+        left = right = null;
+    }
+}
+
+class BinarySearchTree {
+    Node root;
+
+    void insert(int value) {
+        root = insertRec(root, value);
+    }
+
+    Node insertRec(Node root, int value) {
+        if (root == null) {
+            root = new Node(value);
+            return root;
+        }
+        if (value < root.data) {
+            root.left = insertRec(root.left, value);
+        }
+        else if (value > root.data) {
+            root.right = insertRec(root.right, value);
+        }
+        return root; 
+    }
+
+    void inorder(Node root) {
+        if (root != null) {
+            inorder(root.left);
+            System.out.print(root.data + " ");
+            inorder(root.right);
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        BinarySearchTree bst = new BinarySearchTree();
+        bst.insert(50);
+        bst.insert(30);
+        bst.insert(70);
+        bst.insert(20);
+        bst.insert(40);
+        bst.insert(60);
+        bst.insert(80);
+        bst.inorder(bst.root);
+    }
+}
+
+        50
+       /  \
+     30    70
+    / \   / \
+   20 40 60 80
+
+</pre>
+ 
+---
+
+### ✳ Search :
 
 
 
